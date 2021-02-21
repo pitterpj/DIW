@@ -1,0 +1,43 @@
+*.{
+	margin: 0;
+	padding: 0;
+}
+
+.ying {
+	position: relative;
+	margin: 150px auto auto auto;
+	width: 400px;
+	height: 400px;
+	border: 10px solid black;
+	border-radius: 50%;
+	color: transparent; 	
+}
+.circulo1 {
+	position: absolute;
+	width: 187px;
+    height: 187px;
+	background-image:  radial-gradient( rgb(0, 255, 0) 15%, rgb(255, 0, 0) 10%);
+    border-radius: 50%;
+    left: 3%;
+    bottom: 40%;
+}
+
+.circulo2 {
+	position: absolute;
+	width: 187px;
+    height: 187px;
+	background-image:  radial-gradient( rgb(255, 165, 0) 15%, rgb(0, 0, 255) 10%);
+    border-radius: 50%;
+    right: 3%;
+    bottom: 40%;
+}
+
+.circulo3 {
+	position: absolute;
+	width: 187px;
+    height: 187px;
+	background-image:  radial-gradient( rgb(128, 0, 128) 15%, rgb(255, 255, 0) 10%);
+    border-radius: 50%;
+    bottom: 0;
+    right: 26%;
+}

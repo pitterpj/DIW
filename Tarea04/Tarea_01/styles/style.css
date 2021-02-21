@@ -1,0 +1,248 @@
+
+
+/*UNIVERSAL*/
+* {
+	font-family: sans-serif, arial, helveltica;
+	margin: 0;
+	padding: 0;
+}
+/*FUENTE*/
+@font-face {
+  font-family:Kaushan;
+  src: url("../fuente/Kaushan.ttf")
+
+}
+
+
+
+
+/*---------------------------------------------------CABECERA ------*/
+#cabecera {
+	margin: 20px;
+	width: 1000px;
+	height: 120px;
+	display: flex;/* con flex se coloca uno al lado del otro seguido*/
+	justify-content: space-between;
+}
+
+h1{                                               /*----LOGOTIPO----*/
+	width: 200px;
+	height: 60px;
+	font-size: 50px;
+	font-family: Kaushan, arial, helveltica;
+	vertical-align: middle;
+}
+                                    /*-----ICONOS REDES SOCIALES ---*/
+.redes_sociales {
+	margin: auto;
+	margin-right: 0px;
+}
+
+.facebook, .twitter, .youtube {
+	display: inline;
+	font-size: 48px; /*El tamaño de los iconos se cambia mediante 
+					  el tamaño de la fuente*/
+}
+
+.facebook {
+	color: #0000FF;
+}
+
+.twitter {
+	color: #008000;
+}
+
+.youtube {
+	color: #FF0000;
+}
+/* -------------------------------------------BARRA DE NAVEGACION ----*/
+#barra_nav {
+	margin: 20px;
+	width: 1000px;
+	height: 48px;
+}
+
+#barra_nav ul{
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+}
+										/*display:inline para colocarlos
+										seguidos*/
+.menu_nav {
+
+	text-align: center;
+	float: left;
+	width: 192px;
+	height: 48px;
+	background-color: #6400ff; 
+	margin: 0 2px;
+
+}
+
+.menu_nav button {					/*porque display block para alinear*/									
+	color: #ffffff;                 /*las letras*/
+	display: block;
+	width: 192px;
+	height: 48px;
+	background-color: #6400ff;							
+	text-decoration: none;									
+}
+
+
+.menu_nav:hover{
+	background-color: #6400ff;
+	opacity: 40%;
+}
+
+/*------------------------------------------CONTENEDOR DE IMAGENES ----*/
+#contenedor_imagenes {
+	display: flex;                /*flex para colocar seguidad en linea*/
+	justify-content: space-between;
+	height: 192px;
+	width: 1000px;
+	margin: 20px;
+}
+#contenedor_imagenes div {
+		border: 1px solid red;
+}
+.imagen1, .imagen2, .imagen3 {
+	display: block;
+	height: 100px;
+	width: 100px;
+    background-position: 50%;   /*margin auto para alinear las imagenes*/
+    border-radius: 50%;          /* que ahora son bloques con display*/
+    margin: auto;
+}	
+
+h2{                                       
+	font-size: 28px;
+	font-family: Kaushan, arial, helveltica;
+	text-align: center;
+	margin: 0;
+}
+
+div p {
+	font-size: 14px;
+	margin: 10px;
+	text-align: center;
+}
+
+/*-------------------------------------------------------SECCION ------*/
+#seccion {
+	display: flex;
+	justify-content: flex-start;
+	margin: 20px;
+	height: 453px;
+	width: 1000px;
+}
+
+.columna_izq ul {                           /*-----columna izquierda---*/
+	border: 1px solid red;
+	width: 200px;
+	height: 453px;
+	list-style-type: none;	
+}	
+
+.columna_izq ul li {
+	margin: 5px 2px;
+}
+
+#seccion a {
+	display: block;/*Esto hace que se alineen verticalmente*/
+	background-color:#aaa;
+	padding: 10px;
+	
+}
+
+.articulo {                                  /*-----articulo medio-----*/
+	width: 600px;
+	height: 453px;	
+}
+
+#tituloArticulo {
+	font-size: 40px;
+	font-family: Kaushan, arial, helveltica;
+	margin: 20px;
+}
+
+#imagenArticulo {
+	float: left;/* coloca a la imagen a la izq del texto*/
+	width: 300px;
+	height: 200px;
+	margin-right: 10px;
+}
+
+#parrafoArticulo {
+	font-size: 16px;
+	font-family: sans-serif;
+	text-align: justify; 
+	margin: 5px 20px  5px 0px;
+}
+
+.columna_der {                           /*------columna derecha -----*/
+	width: 200px;
+	height: 453px;
+
+}
+.boton_iniciar {                          /*--------boton iniciar-----*/
+	color: #fff;
+	background-color: #6400ff;
+	width:200px;
+	height: 50px;
+	margin-bottom: 5px;
+	display: flex;             /*Nota:Estas tres propiedades*/
+    justify-content: center;   /*centran texto en div*/
+    align-items: center;
+}
+
+input {  									  /*-----formulario ----*/
+	font-family: FontAwesome; 
+	width: 176px;
+	padding: 10px;
+	margin: 5px 0px;
+}
+											  /* -----boton enviar--*/
+.boton_enviar {
+	background-color: #640064;
+	color: #ffffff;
+	width: 40%;
+	margin: auto 30%;
+}
+
+/* -----------------------------------------------PIE DE PAGINA-----*/
+.footer {
+	margin: 20px;
+	width: 1000px;
+	height: 70px;
+	background-color: #6400ff;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div[class="footer"] p, div[class="chat"] p  {  /*iconos footer y chat*/
+	font-family: FontAwesome; 
+}
+/*-----------------------------------------------------------CHAT---*/
+.chat {
+	display: flex;
+	float: right;
+	width: 200px;
+	height: 40px;
+	color: #ffffff;
+	background-color: #ff0064;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px 10px 0 0;
+	position: sticky;
+	bottom: 0;  
+}
+
+div[class="chat"]:hover{
+	background-color: #6400ff;
+}
+
